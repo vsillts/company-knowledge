@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Information Lookup</title>
+    <script>
+        function lookupCompany() {
+            const companyName = document.getElementById('companyName').value;
+            const response = `Information about ${companyName}: [Placeholder for company info]`;
+            document.getElementById('response').innerText = response;
+        }
+    </script>
+</head>
+<body>
+    <h1>Company Information Lookup</h1>
+    <input type="text" id="companyName" placeholder="Enter company name">
+    <button onclick="lookupCompany()">Lookup</button>
+    <p id="response"></p>
+</body>
+</html>
